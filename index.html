@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Excuses-generator</title>
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+	<link rel="stylesheet" href="css/style.css" type="text/css ">
+</head>
+<body>
+	<nav>
+		<p></p>
+	</nav>
+	<header>
+		<div class="blue-triangle">
+			<h1>Excuse-Generator</h1>
+		</div>
+		<div class="black-triangle">
+			<h1 class="edition">School Edition!</h1>
+		</div>
+	</header>
+
+	<form>
+		<fieldset class="eleve">
+			<legend>Informations de l'élève</legend>
+			<div>
+				<label for="nom">Nom :</label>
+				<input type="text" id="nom" name="nom" placeholder="Nom">
+			</div>
+			<div>
+				<label for="prenom">Prénom :</label>	
+				<input type="text" id="prenom" name="prenom" placeholder="Prenom">
+			</div>
+		</fieldset>
+		<fieldset class="excuses">
+			<legend>Excuse personnalisable </legend>
+				<label for="excuses"> Sélectionner une excuse :</label><br>
+					<input type="radio" id="maladie" name="excuses">
+						<label for="maladie"> Maladie :</label> 
+						<input type="text" id="maladie" name="maladie"><br>
+					<input type="radio" id="deces" name="excuses">
+						<label for="deces">Décés :</label> 
+						<input type="text" id="deces" name="deces"><br>
+					<input type="radio" id="extra" name="excuses">
+						<label for="extra">Activité extra-scolaire :</label> 
+						<input type="text" id="extra" name="extra"><br>
+					<input type="radio" id="choix" name="excuses">
+						<label for="choix">Excuse de votre choix :</label><br>
+						<textarea rows="5" cols="45" name="excuses" id="choix" placeholder="écrivez l'excuse ici"></textarea><br>
+		</fieldset>
+		<fieldset class="prof">
+			<legend>Informations du professeur</legend>
+			<div>
+				<label for="nom">Nom :</label>
+				<input type="text" id="nom" name="nom" placeholder="Nom">
+			<div>
+				<label > Sexe:</label>
+				<input type="radio" id="genre1" name="genre"><label for="genre1">H</label>
+				<input type="radio" id="genre2" name="genre"><label for="genre2">F</label>
+			</div>
+		</fieldset>
+
+	</form>
+</body>
+</html>
